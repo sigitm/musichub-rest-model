@@ -4,11 +4,13 @@ public class HealthDto {
 	
 	private String version;
 	private String status;
+	private DeviceDto selectedDevice;
 	
-	public HealthDto(String version, String status) {
+	public HealthDto(String version, String status, DeviceDto selectedDevice) {
 		super();
 		this.version = version;
 		this.status = status;
+		this.selectedDevice = selectedDevice;
 	}
 
 	public String getVersion() {
@@ -27,4 +29,12 @@ public class HealthDto {
 		this.status = status;
 	}
 	
+	public DeviceDto getSelectedDevice() {
+		return selectedDevice;
+	}
+
+	public void setSelectedDevice(DeviceDto selectedDevice) {
+		this.selectedDevice = selectedDevice;
+	}
+
 }
